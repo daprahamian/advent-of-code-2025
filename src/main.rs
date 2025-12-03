@@ -1,12 +1,10 @@
 mod day1;
-mod day2;
 
 use std::collections::HashMap;
 
 fn main() {
     let mut days: HashMap<u64, Box<dyn Fn()>> = HashMap::new();
     days.insert(1u64, Box::new(day1::day1));
-    days.insert(2u64, Box::new(day2::day2));
 
     let day_arg: Option<u64> = std::env::args().nth(1).and_then(|d| d.parse::<u64>().ok());
 

@@ -1,6 +1,4 @@
-use std::fs;
-
-fn crack_safe(starting_pos: i64, input: Vec<String>) -> u64 {
+pub fn part1(starting_pos: i64, input: &Vec<String>) -> u64 {
     let mut count = 0;
     let mut pos: i64 = starting_pos;
 
@@ -21,15 +19,4 @@ fn crack_safe(starting_pos: i64, input: Vec<String>) -> u64 {
         }
     }
     count
-}
-
-pub fn day2() {
-    // let input_str = fs::read_to_string("src/day1/input.txt").expect("File should be present");
-    // let input = input_str
-    //     .split("\n")
-    //     .filter(|x| !x.is_empty())
-    //     .map(str::to_string)
-    //     .collect::<Vec<_>>();
-    // let result = crack_safe(50, input);
-    println!("DAY 2: foo");
 }
