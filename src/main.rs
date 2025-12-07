@@ -1,6 +1,7 @@
 mod day1;
 mod day2;
 mod day3;
+mod day4;
 
 use std::collections::HashMap;
 
@@ -9,6 +10,7 @@ fn main() {
     days.insert(1, Box::new(day1::day1));
     days.insert(2, Box::new(day2::day2));
     days.insert(3, Box::new(day3::day3));
+    days.insert(4, Box::new(day4::day4));
 
     let day_arg: Option<u64> = std::env::args().nth(1).and_then(|d| d.parse::<u64>().ok());
 
